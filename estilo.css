@@ -21,8 +21,15 @@
 }
 
 .b{
-
     margin-left: auto;
+    margin-right: auto; 
+}
+
+#startBtn{
+
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
     margin-right: auto; 
 
 }
