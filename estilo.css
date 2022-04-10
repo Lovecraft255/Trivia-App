@@ -1,6 +1,28 @@
 .name{
+    text-align: center;
+}
 
+#answers{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: aqua;
+    width: 50%;
+}
+
+.a{
+    background-color: #f1f1f1;
+    font-size: 30px;
+    background-color:white;
+    margin:10px;
+    text-align: center;
+}
+
+.b{
+
+    margin-left: auto;
+    margin-right: auto; 
 
 }
