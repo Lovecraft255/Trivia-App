@@ -1,5 +1,25 @@
+@font-face {
+    font-family: 'garetB';
+    src: url("Garet-Book.ttf");
+}
+
+@font-face {
+    font-family: 'garetH';
+    src: url("Garet-Heavy.ttf");
+}
+
 .name{
     text-align: center;
+}
+
+#question{
+    font-family: "garetH";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 24px;
+    width: 80%;
 }
 
 #answers{
@@ -8,16 +28,18 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
-    width: 50%;
+    background-color: #b1b1b1;
+    width: 80%;
 }
 
 .a{
     background-color: #f1f1f1;
-    font-size: 30px;
+    font-size: 24px;
     background-color:white;
     margin:10px;
     text-align: center;
+    width: 400px;
+    font-family: "garetB";
 }
 
 .b{
