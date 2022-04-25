@@ -68,8 +68,6 @@ if(window.location.pathname == "/quest.html"){
                 value = obj.value;
                 done = obj.done;
     
-                console.log(answersId);
-    
                 questionDiv.textContent = value.question;
                 a0Div.textContent = value.answers[a0Id];
                 a1Div.textContent = value.answers[a1Id];
@@ -79,23 +77,95 @@ if(window.location.pathname == "/quest.html"){
             }else if(done){
                 localStorage.setItem( "AnswersId" , JSON.stringify(answersId) );
                 window.location.replace("/result.html");
-            }
-          
+            } 
         }
-
     })
-
-    
-
     console.log("terminó");
-
-    
-
-     
 }
 
 if(window.location.pathname == "/result.html"){
 
     let resultDiv = document.getElementById("results");
+    let userInfoDiv = document.getElementById("userInfo");
+    let getAID= localStorage.getItem("AnswersId");
+    let getUserName = localStorage.getItem("UserName");  
+
+    let userNameText = document.createElement("h4");
+    let userPoints = document.createElement("h4");
+    
+    const UserName = JSON.parse(getUserName);
+    const answersId = JSON.parse(getAID);
+
+    console.log(userInfoDiv);
+
+    
+    
+    let puntaje = 0;
+
+    for (let i = 0; i <= 9; i++) {
+        
+        let resultAnswerDiv = document.createElement("div");
+        let userAnswer = document.createElement("h4");
+        let correctAnswer = document.createElement("h4");
+
+        let answerUser = answersId[i];
+
+        let answerCorrect = data[i].correctAnswer;
+
+        if(data[i].correctAnswer == answersId[i]){
+
+            userAnswer.textContent = "Respuesta del usuario: " +  data[i].answers[answerUser];
+            correctAnswer.textContent = "Respuesta correcta: " + data[i].answers[answerCorrect];
+    
+            console.log(userAnswer);
+            console.log(correctAnswer);
+
+            resultAnswerDiv.append(userAnswer);
+            resultAnswerDiv.append(correctAnswer);
+
+            resultAnswerDiv.setAttribute("class" , "correctAnswerClass");
+    
+            resultDiv.append(resultAnswerDiv); 
+            
+            puntaje++;
+
+            console.log(puntaje);
+
+        }else if(data[i].correctAnswer != answersId[i]){
+
+            userAnswer.textContent = "Respuesta del usuario: " + data[i].answers[answerUser];
+            correctAnswer.textContent = "Respuesta correcta: " + data[i].answers[answerCorrect];
+    
+            console.log(userAnswer);
+            console.log(correctAnswer);
+
+            resultAnswerDiv.append(userAnswer);
+            resultAnswerDiv.append(correctAnswer);
+
+            resultAnswerDiv.setAttribute("class" , "wrongAnswerClass");
+    
+            resultDiv.append(resultAnswerDiv); 
+
+        }        
+    }
+
+    if( puntaje >= 5  ){
+
+        userNameText.textContent = "Felicidades " + UserName + " ganaste el quest";
+        userPoints.textContent= "Tu puntaje es de " + puntaje + " puntos";
+        
+        userInfoDiv.append(userNameText);
+        userInfoDiv.append(userPoints);
+
+    }else{
+
+        userNameText.textContent = "Latima " + UserName + " perdiste el quest";
+        userPoints.textContent= "Tu puntaje es de " + puntaje + " puntos";
+        
+        userInfoDiv.append(userNameText);
+        userInfoDiv.append(userPoints);
+
+    }
+    
 
 }

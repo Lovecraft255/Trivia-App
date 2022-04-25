@@ -48,10 +48,41 @@
 }
 
 #startBtn{
-
     display: block;
     margin-left: auto;
     margin-top: 10px;
     margin-right: auto; 
+}
 
+.correctAnswerClass{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #80ff80;
+    width: 600px;
+    border: 1px solid black;
+    font-family: "garetB";
+    margin-bottom: 40px;
+}
+
+.wrongAnswerClass{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff6161;
+    width: 600px;
+    border: 1px solid black;
+    font-family: "garetB";
+    margin-bottom: 40px;
+}
+
+#userInfo{
+    font-family: "garetH";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 24px;
+    width: 80%;
+    background-color: #b1b1b1;
 }
