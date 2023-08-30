@@ -8,11 +8,34 @@
     src: url("Garet-Heavy.ttf");
 }
 
-.name{
+.name {
     text-align: center;
+    background-color: #5a5a5a;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 
-#question{
+#userName {
+    background-color: #888888;
+    color: white;
+}
+
+#startBtn {
+    background-color: #888888;
+    color: white;
+    border: 2px black solid;
+}
+
+
+#startBtn:hover {
+    background-color: #5a5a5a;
+}
+
+
+#question {
     font-family: "garetH";
     text-align: center;
     margin-left: auto;
@@ -22,61 +45,70 @@
     width: 80%;
 }
 
-#answers{
+#answers {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #b1b1b1;
+    background-color: #888888;
     width: 80%;
 }
 
-.a{
-    background-color: #f1f1f1;
+.a {
+    background-color: #5a5a5a;
     font-size: 24px;
-    background-color:white;
-    margin:10px;
+    margin: 10px;
     text-align: center;
-    width: 400px;
+    width: 95%;
     font-family: "garetB";
+    color: white;
+    border: 2px solid black;
 }
 
-.b{
+.a:hover {
+    background-color: #858585;
+    color: black;
+}
+
+.b {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    width: 100%;
 }
 
-#startBtn{
+#startBtn {
     display: block;
     margin-left: auto;
     margin-top: 10px;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
-.correctAnswerClass{
+.correctAnswerClass {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #80ff80;
+    background-color: #196400;
     width: 600px;
-    border: 1px solid black;
+    border: 2px solid black;
     font-family: "garetB";
     margin-bottom: 40px;
+    color: white;
 }
 
-.wrongAnswerClass{
+.wrongAnswerClass {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ff6161;
+    background-color: #8b0023;
     width: 600px;
-    border: 1px solid black;
+    border: 2px solid black;
     font-family: "garetB";
     margin-bottom: 40px;
+    color: white;
 }
 
-#userInfo{
+#userInfo {
     font-family: "garetH";
     text-align: center;
     margin-left: auto;
@@ -84,5 +116,6 @@
     margin-bottom: 40px;
     font-size: 24px;
     width: 80%;
-    background-color: #b1b1b1;
+    background-color: #5a5a5a;
+    color: white
 }
