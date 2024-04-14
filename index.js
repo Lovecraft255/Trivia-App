@@ -1,6 +1,6 @@
 import { data } from "./data.js"
 
-if (window.location.pathname == "/index.html") {
+if (window.location.pathname == "./index.html") {
 
     let startBtn = document.getElementById("startBtn");
 
@@ -20,7 +20,7 @@ if (window.location.pathname == "/index.html") {
 
 }
 
-if (window.location.pathname == "/quest.html") {
+if (window.location.pathname == "./quest.html") {
 
     let questionDiv = document.getElementById("question");
     let answersDiv = document.getElementById("answers");
