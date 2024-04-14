@@ -1,11 +1,11 @@
 import { data } from "./data.js"
 
-if (window.location.pathname == "index.html") {
+if (window.location.pathname == "/index.html") {
 
     let startBtn = document.getElementById("startBtn");
 
     startBtn.addEventListener("click", () => {
-
+        console.log("Escuchandio evento")
         let userName = document.getElementById("userName").value
 
         if (userName == "" || userName == null) {
