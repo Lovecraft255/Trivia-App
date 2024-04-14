@@ -1,5 +1,7 @@
 import { data } from "./data.js"
 
+console.log("Escuchandio evento 1")
+
 if (window.location.pathname == "/index.html") {
 
     let startBtn = document.getElementById("startBtn");
