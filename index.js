@@ -5,7 +5,6 @@ console.log(window.location.pathname);
 
 if (window.location.pathname == "/") {
 
-    console.log("Escuchandio evento 2" + startBtn);
     let startBtn = document.getElementById("startBtn");
 
     startBtn.addEventListener("click", () => {
