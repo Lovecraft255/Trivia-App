@@ -3,7 +3,7 @@ import { data } from "./data.js"
 console.log("Escuchandio evento 1")
 console.log(window.location.pathname);
 
-if (window.location.pathname == "/index.html") {
+if (window.location.pathname == "/") {
 
     console.log("Escuchandio evento 2" + startBtn);
     let startBtn = document.getElementById("startBtn");
