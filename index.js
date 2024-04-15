@@ -4,10 +4,8 @@ console.log("Escuchandio evento 1")
 
 if (window.location.pathname == "/index.html") {
 
-    let startBtn = document.getElementById("startBtn");
-
-
     console.log("Escuchandio evento 2" + startBtn);
+    let startBtn = document.getElementById("startBtn");
 
     startBtn.addEventListener("click", () => {
         console.log("Escuchandio evento")
