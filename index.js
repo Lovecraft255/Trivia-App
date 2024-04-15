@@ -1,6 +1,7 @@
 import { data } from "./data.js"
 
 console.log("Escuchandio evento 1")
+console.log(window.location.pathname);
 
 if (window.location.pathname == "/index.html") {
 
