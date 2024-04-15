@@ -6,6 +6,9 @@ if (window.location.pathname == "/index.html") {
 
     let startBtn = document.getElementById("startBtn");
 
+
+    console.log("Escuchandio evento 2" + startBtn);
+
     startBtn.addEventListener("click", () => {
         console.log("Escuchandio evento")
         let userName = document.getElementById("userName").value
